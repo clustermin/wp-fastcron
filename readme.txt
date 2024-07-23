@@ -1,9 +1,10 @@
 === FastCron ===
 Contributors: fastcron
-Tags: wp-cron, cronjob, cron job, wordpress cron, fastcron, online cronjob, web cron
+Tags: wp-cron, cronjob, cron job, online cronjob, web cron
 Requires at least: 2.9
 Tested up to: 6.6
 Stable tag: 1.0.0
+License: GPLv2 or later
 
 This plugin will set up a free cronjob at FastCron to run your wp-cron.php file automatically. Completely free, no registration required.
 
