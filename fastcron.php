@@ -19,15 +19,17 @@ add_filter( 'plugin_action_links', 'fastcron_action_links', 10, 5 );
 
 function fastcron_activate() {
     $url = 'https://app.fastcron.com/free?site='. site_url();
+
     $response = wp_remote_get($url, ['timeout' => 30]);
-    $responseBody = wp_remote_retrieve_body($response);
-    $response = @json_decode($responseBody);
-    if(!$response || isset($response->message)) {
+    $response = wp_remote_retrieve_body($response);
+    
+    $response = @json_decode($response);
+    if(!$response || !isset($response->id) || !isset($response->secret)) {
         return false;
     }
     
-    update_option('fastcron_id', $response->id);
-    update_option('fastcron_secret', $response->secret);
+    update_option('fastcron_id', (int)$response->id);
+    update_option('fastcron_secret', sanitize_key($response->secret));
 }
 
 function fastcron_deactivate() {
