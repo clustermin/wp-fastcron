@@ -2,7 +2,7 @@
 /*
 Plugin Name: FastCron
 Plugin URI: https://wordpress.org/plugins/fastcron/
-Description: This plugin will <strong>set up a cronjob at FastCron</strong> to run your <strong>wp-cron.php</strong> file automatically. Completely free, no registration required.
+Description: This plugin will <strong>set up a free cronjob at FastCron</strong> to run your <strong>wp-cron.php</strong> file automatically. Completely free, no registration required.
 Author: FastCron
 Version: 1.0.0
 Author URI: https://www.fastcron.com/?ref=wp
