@@ -13,7 +13,7 @@ This plugin will set up a free cronjob at FastCron to run your wp-cron.php file 
 This plugin relies on the free cronjob service provided by
 [FastCron](https://www.fastcron.com/?ref=wp).
 
-Upon activated, it will send your site URL to FastCron,
+Upon activation, it will send your site URL to FastCron,
 and they will create and run a cronjob every 5 minutes
 to visit your `wp-cron.php` file via this URL:
 `https://site-url/wp-cron.php?doing_wp_cron=1`
@@ -29,9 +29,9 @@ If you manage several WordPress blogs/websites for your clients,
 please [register an account at FastCron](https://app.fastcron.com/signup?ref=wp)
 and set up your cronjobs there.
 
-Upon deactivated, the plugin will request FastCron to remove the cronjob to your `wp-cron.php` file.
+Upon deactivation, the plugin will request FastCron to remove the cronjob to your `wp-cron.php` file.
 
-By using this plugin, you agreed to their
+By using this plugin, you agree to their
 [Terms of service](https://www.fastcron.com/about/terms?ref=wp) and 
 [Privacy policy](https://www.fastcron.com/about/privacy?ref=wp).
 
